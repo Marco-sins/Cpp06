@@ -3,22 +3,14 @@ CPPFLAGS := -Wall -Werror -Wextra -std=c++98
 RM := rm -fr
 
 SRC :=	main.cpp \
-		Bureaucrat.cpp \
-		AForm.cpp \
-		PresidentialPardonForm.cpp \
-		RobotomyRequestForm.cpp \
-		ShrubberyCreationForm.cpp
+		ScalarConverter.cpp
 
-HEADERS := 	Bureaucrat.hpp \
-		AForm.hpp \
-		PresidentialPardonForm.hpp \
-		RobotomyRequestForm.hpp \
-		ShrubberyCreationForm.hpp
+HEADERS := 	ScalarConverter.hpp
 
 OBJDIR = objs
 OBJ = $(SRC:%.cpp=$(OBJDIR)/%.o)
 
-NAME := form
+NAME := converter
 
 all: $(NAME)
 
